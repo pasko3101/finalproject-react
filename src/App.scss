@@ -38,16 +38,89 @@
   box-sizing: border-box;
 }
 @font-face {
-  font-family: 'OpenSans';
+  font-family: "OpenSans";
   src: url(./fonts/OpenSans-Regular.ttf);
 }
 @font-face {
-  font-family: 'OpenSans';
+  font-family: "OpenSans";
   src: url(./fonts/OpenSans-SemiBold.ttf);
   font-weight: 600;
 }
 @font-face {
-  font-family: 'Merriweather';
+  font-family: "Merriweather";
   src: url(./fonts/Merriweather-Bold.ttf);
   font-weight: 700;
 }
+body {
+  margin: 0 auto;
+  width: 1440px;
+  background-color: #fff;
+
+}
+.header {
+  box-shadow: 0 60px 0 0 #32313A inset;
+  // box-shadow: 0 60px 0 0 #ed83a8 inset;
+  &__container {
+    margin: 0 auto;
+    width: 1110px;
+  }
+  &__logoline {
+    display: flex;
+    justify-content: space-between;
+    // background: #32313A;
+    padding: 20px 0;
+  }
+  &__user{
+    width: 100px;
+    display: flex;
+    justify-content: space-between
+  }
+  &__up2off {
+    background-color: #ed83a8;
+    padding: 18px 0;
+    text-align: center;
+  }
+  &__nav{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__search{
+    width: 105px;
+    display: flex;
+    align-items: center;
+  }
+}
+.text__os_regular {
+  font-family: "OpenSans";
+  // font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: white;
+  // text-decoration: none;
+}
+.black{
+  margin-left: 10px;
+  font-size: 13px;
+  line-height: 16px;
+  color: #32313A;
+}
+.text__os_semibold {
+  font-family: "OpenSans";
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: #32313A;
+  text-decoration: none;
+}
+.text__os_regular + .text__os_regular {
+  margin-left: 20px;
+}
+.nav{
+  width: 560px;
+  margin: 17px 0;
+  display: flex;
+  justify-content: space-between;
+  &__button{
+    margin: 0 0 2px 10px;
+  }
+ }
