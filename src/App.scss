@@ -85,6 +85,9 @@ body {
     display: flex;
     align-items: center;
   }
+  &__img {
+    margin-right: 10px;
+  }
 }
 .text__os_regular {
   font-family: "OpenSans";
@@ -93,7 +96,6 @@ body {
   color: white;
 }
 .black {
-  margin-left: 10px;
   font-size: 13px;
   line-height: 16px;
   color: #32313a;
@@ -106,14 +108,25 @@ body {
   color: #32313a;
   text-decoration: none;
 }
-.white{
+.white {
   font-style: 14px;
   color: #fff;
-  background-color: #32313A;
-    padding: 9px;
+  background-color: #32313a;
+  padding: 9px;
 }
-.text__os_regular + .text__os_regular {
+.mrg_lf {
   margin-left: 20px;
+}
+.text__m_bold {
+  font-family: "Merriweather";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 36px;
+  color: #32313a;
+}
+.subtitle {
+  font-size: 14px;
+  line-height: 18px;
 }
 .nav {
   width: 560px;
@@ -127,6 +140,29 @@ body {
 .main {
   box-shadow: 0 -60px 0 0 #ed83a8;
   padding-top: 10px;
+  &__container {
+    margin: 0 auto;
+    width: 1110px;
+  }
+  &__pictures {
+    display: flex;
+    justify-content: space-between;
+    &_img {
+      border-radius: 2px;
+    }
+  }
+  &__cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  &__card {
+    display: flex;
+    flex-direction: column;
+  }
+  &__title {
+    width: 1110px;
+  }
 }
 .heroscreen {
   background-image: url(./component/main/picture/hs-bg.png);
@@ -138,7 +174,7 @@ body {
     display: flex;
     justify-content: space-between;
   }
-  &__card{
+  &__card {
     display: flex;
     flex-direction: column;
     text-align: center;

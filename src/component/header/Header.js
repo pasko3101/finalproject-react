@@ -20,7 +20,7 @@ function Head() {
         <div className="header__nav">
           <Nav></Nav>
           <div className="header__search">
-            <img src={search} alt="search" />
+            <img className="header__img" src={search} alt="search" />
             <span className="text__os_regular black">Search for...</span>
           </div>
         </div>
@@ -28,7 +28,7 @@ function Head() {
           <span className="text__os_regular">
             Up to 50% off all dresses when use code DRESSLOVER
           </span>
-          <a className="text__os_regular" href="#">
+          <a className="text__os_regular mrg_lf" href="#">
             Shop dresses
           </a>
         </div>
