@@ -100,6 +100,11 @@ body {
   line-height: 16px;
   color: #32313a;
 }
+.text {
+  font-size: 14px;
+  line-height: 22px;
+  color: #6e6d74;
+}
 .text__os_semibold {
   font-family: "OpenSans";
   font-weight: 600;
@@ -124,6 +129,10 @@ body {
   line-height: 36px;
   color: #32313a;
 }
+.title {
+  font-size: 36px;
+  line-height: 46px;
+}
 .subtitle {
   font-size: 14px;
   line-height: 18px;
@@ -147,6 +156,7 @@ body {
   &__pictures {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     &_img {
       border-radius: 2px;
     }
@@ -162,6 +172,21 @@ body {
   }
   &__title {
     width: 1110px;
+  }
+  &__exclusively {
+    width: 444px;
+  }
+  &__button {
+    width: 190px;
+    height: 36px;
+    background: #32313A;
+    border-radius: 2px;
+    font-family: "OpenSans";
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: #fff;
   }
 }
 .heroscreen {
