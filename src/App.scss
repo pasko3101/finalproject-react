@@ -95,6 +95,9 @@ body {
   line-height: 24px;
   color: white;
 }
+.bl{
+  color: #32313A;
+}
 .black {
   font-size: 13px;
   line-height: 16px;
@@ -203,5 +206,14 @@ body {
     display: flex;
     flex-direction: column;
     text-align: center;
+  }
+}
+.footer{
+  &__brends{
+    width: 1110px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 }
