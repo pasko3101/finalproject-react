@@ -11,7 +11,7 @@ function Brends() {
       <img src={converse} alt="converse" />
       <img src={steveMadden} alt="steveMadden" />
       <img src={uggAustralia} alt="uggAustralia" />
-      <div className="text__os_regular bl">All brands</div>
+      <a href="#" className="text__os_regular bl">All brands</a>
     </div>
   );
 }

@@ -12,7 +12,7 @@ function EcoCollection() {
           materials designed to address the environmental impacts of the textile
           industry.
         </p>
-        <button className="main__button">Shop Eco collection</button>
+        <button className="button">Shop Eco collection</button>
       </div>
       <img src={image236} alt="image236" />
     </div>
