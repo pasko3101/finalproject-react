@@ -1,0 +1,219 @@
+.shopcard {
+  width: 1110px;
+  margin: 0 auto;
+  &__bread {
+    font-size: 12px;
+    line-height: 16px;
+    margin: 25px 0px 10px 0px;
+  }
+  &__title {
+    font-family: "Merriweather";
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 36px;
+    color: #32313a;
+    margin: 30px 0;
+  }
+  &__text_color {
+    color: #9f9ea3;
+  }
+  &__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  &__item {
+    width: 714px;
+    display: flex;
+    flex-direction: column;
+    &__header {
+      display: flex;
+      justify-content: space-between;
+      font-size: 14px;
+      line-height: 16px;
+      color: #86858b;
+      border-bottom: 1px solid #e6e5e8;
+      &_block {
+        display: flex;
+        justify-content: space-between;
+        width: 325px;
+        margin-bottom: 16px;
+        padding-right: 45px;
+      }
+    }
+  }
+  &__count {
+    width: 70px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__cards {
+    display: flex;
+    flex-direction: row;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 24px 0;
+    &__img {
+      width: 68px;
+      height: 100px;
+      border-radius: 2px;
+    }
+    &__wrap {
+      width: 280px;
+      margin: 0 30px 0 8px;
+    }
+    &__head {
+      font-size: 12px;
+      line-height: 16px;
+      color: #9f9ea3;
+      margin-bottom: 4px;
+    }
+    &__title {
+      font-weight: 600;
+      color: #32313a;
+      line-height: 16px;
+      margin-bottom: 4px;
+      font-size: 14px;
+    }
+    &__subtitle {
+      font-size: 12px;
+      line-height: 16px;
+      margin-top: 6px;
+    }
+    &__infotext {
+      width: 295px;
+      display: flex;
+      margin-top: 20px;
+      height: 16px;
+      align-items: center;
+      justify-content: space-between;
+      &_width {
+        width: 115px;
+        &_right{
+          text-align: right;
+        }
+      }
+    }
+    &__minus {
+      cursor: pointer;
+      transition: color, transform 500ms ease;
+      &:hover {
+        color: #ed83a8;
+        transform: scale(1.5);
+      }
+    }
+    &__plus {
+      cursor: pointer;
+      transition: color, transform 500ms ease;
+      &:hover {
+        color: #ed83a8;
+        transform: scale(1.5);
+      }
+    }
+    &__cross {
+      display: flex;
+      margin: 20px 0 0 20px;
+      cursor: pointer;
+      transition: color, transform 500ms ease;
+      &:hover {
+        color: red;
+      }
+    }
+  }
+  &__btn {
+    border: 0;
+    background: none;
+  }
+  &__subtotal {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 0 50px 0;
+    border-top: 1px solid #e6e5e8;
+    &__clear {
+      display: flex;
+      cursor: pointer;
+      transition: color, transform 500ms ease;
+      align-items: flex-end;
+      border: 0;
+      background: unset;
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+    &__icon {
+      color: #6e6d74;
+      height: 19px;
+      width: 17px;
+    }
+    &__text {
+      color: #6e6d74;
+      font-size: 14px;
+      line-height: 16px;
+      margin-left: 8px;
+      &_bolt {
+        font-weight: 600;
+        color: #32313a;
+        margin-left: 24px;
+      }
+    }
+    &__wrap {
+      display: flex;
+      padding-right: 30px;
+    }
+  }
+  &__order {
+    width: 350px;
+    &__text {
+      font-size: 14px;
+      line-height: 16px;
+      color: #32313a;
+      &_bolt {
+        font-weight: 600;
+      }
+    }
+    &_border {
+      border-bottom: 1px solid #e6e5e8;
+      padding-bottom: 16px;
+    }
+    &__subwrap {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 24px;
+    }
+    &__form {
+      padding: 24px 0;
+      border-bottom: 1px solid #e6e5e8;
+    }
+    &_input {
+      color: #86858b;
+      border: 1px solid #b5b5bc;
+      border-radius: 2px;
+      width: 265px;
+      height: 36px;
+      padding-left: 14px;
+      outline: none;
+    }
+    &_btn {
+      background: #32313a;
+      border-radius: 2px;
+      width: 75px;
+      height: 36px;
+      border: 0;
+      cursor: pointer;
+      color: #e6e5e8;
+      font-weight: 600;
+      margin-left: 10px;
+      transition: all 0.3s linear;
+      &:hover {
+        color: #ed83a8;
+        transform: scale(1.1);
+      }
+      &_checkout {
+        width: 100%;
+        height: 40px;
+        margin: 30px 0 0;
+      }
+    }
+  }
+}

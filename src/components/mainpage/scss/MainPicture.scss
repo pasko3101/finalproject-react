@@ -1,0 +1,9 @@
+
+.mainPic {
+	display: flex;
+	justify-content: center;
+	&__size {
+	width: 1440px;
+	height: 400px;
+}
+}

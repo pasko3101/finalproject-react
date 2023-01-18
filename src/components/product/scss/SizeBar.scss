@@ -1,0 +1,60 @@
+.sizebar {
+  width: 350px;
+  height: 40px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  border: solid 1px #cccbcf;
+  &__elem {
+    font-size: 14px;
+    line-height: 16px;
+    color: #86858b;
+    margin-left: 12px;
+    width: 100%;
+  }
+  &__container {
+    display: none;
+    &_drop {
+      width: 350px;
+      position: absolute;
+      top: 39px;
+      left: -1px;
+      border: solid 1px #cccbcf;
+      border-top: none;
+      border-bottom: none;
+    }
+  }
+  &__drop {
+    list-style-type: none;
+    padding: 10px;
+    border-bottom: solid 1px #cccbcf;
+    background-color: #fff;
+    cursor: pointer;
+    &:hover {
+      color: #000;
+      background-color: #dfdfdf;
+    }
+  }
+  &__btn {
+    width: 100%;
+    text-align: right;
+    border: none;
+    position: absolute;
+    background: none;
+    cursor: pointer;
+    height: 40px;
+    padding-right: 10px;
+    line-height: 10px;
+    &icon {
+			width: 20px;
+			height: 20px;
+      transition: all 0.2s linear;
+      &_active {
+				width: 20px;
+				height: 20px;
+        transform: rotate(180deg);
+        transition: all 0.2s linear;
+      }
+    }
+  }
+}

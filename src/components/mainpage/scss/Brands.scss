@@ -1,0 +1,27 @@
+.brands {
+  &__container {
+    display: flex;
+    justify-content: center;
+    margin: 100px 0 100px;
+  }
+  &__wrap {
+    width: 1110px;
+    display: flex;
+    color: #32313a;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px;
+    line-height: 24px;
+    text-decoration-line: underline;
+    cursor: pointer;
+  }
+  &__link {
+    color: #32313a;
+  }
+}
+.logo__ani {
+  transition: color, transform 500ms ease;
+  &:hover {
+    transform: scale(1.1);
+  }
+}

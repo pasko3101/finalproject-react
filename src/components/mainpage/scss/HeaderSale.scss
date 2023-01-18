@@ -1,0 +1,63 @@
+.header {
+  &__container {
+    &_sale {
+      background: #ed83a8;
+    }
+  }
+  &__sale {
+    width: 570px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    padding: 18px 0;
+    white-space: nowrap;
+    overflow: hidden;
+    & h2{
+      display: inline-block;
+      padding-left: 100%;
+      // -webkit-animation: scroll 10s infinite linear;
+      // -moz-animation: scroll 10s infinite linear;
+      animation: scroll 10s infinite linear;
+    }
+    &_text {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 24px;
+      color: #fff;
+    }
+    &_link {
+      size: 16px;
+      color: #fff;
+      margin-left: 20px;
+    }
+  }
+}
+@-webkit-keyframes scroll {
+  0% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+  100% {
+    -webkit-transform: translate(-100%, 0);
+    transform: translate(-100%, 0);
+  }
+}
+@-moz-keyframes scroll {
+  0% {
+    -moz-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+  100% {
+    -moz-transform: translate(-100%, 0);
+    transform: translate(-100%, 0);
+  }
+}
+@keyframes scroll {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
+  }
+}
+

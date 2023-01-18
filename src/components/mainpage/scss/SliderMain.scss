@@ -1,0 +1,154 @@
+@import "node_modules/@glidejs/glide/src/assets/sass/glide.core";
+@import "node_modules/@glidejs/glide/src/assets/sass/glide.theme";
+
+.glide {
+  &__slide {
+    width: 25%;
+  }
+  &__style {
+    position: unset;
+    display: flex;
+    justify-content: flex-end;
+    border: none;
+    background: none;
+  }
+}
+.img {
+  &__card {
+    width: 255px;
+    height: 384px;
+  }
+}
+.cards {
+  &__item {
+    width: 255px;
+    position: relative;
+  }
+  &__title {
+    font-family: "Merriweather";
+    font-weight: 700;
+    line-height: 18px;
+    color: #32313a;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  &__description {
+    display: -webkit-box;
+    font-size: 13px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 16px;
+    color: #56555d;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    margin: 10px 0 10px 0;
+  }
+  &__price {
+    font-size: 13px;
+    line-height: 16px;
+    margin-bottom: 10px;
+  }
+}
+.card {
+  &__heart {
+    position: absolute;
+    top: 26px;
+    left: 223px;
+
+    &_favorite {
+      border: 0;
+      position: absolute;
+      top: 12px;
+      left: 219px;
+      display: flex;
+      width: 24px;
+      height: 24px;
+      background: #fff;
+      border-radius: 50%;
+    }
+    &_item {
+      margin: auto;
+      stroke: #6e6d74;
+      cursor: pointer;
+      transition: all 300ms ease;
+      &:hover {
+        fill: #6e6d74;
+        stroke: #6e6d74;
+        transform: scale(1.2);
+      }
+    }
+    &_active {
+      transform: scale(1.1);
+      fill: #ed83a8;
+      stroke: #ed83a8;
+    }
+  }
+  &__tdn {
+    text-decoration: none;
+  }
+}
+.slider {
+  &__title {
+    font-family: "Merriweather";
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 36px;
+    color: #32313a;
+    cursor: pointer;
+    border: none;
+    background: none;
+    text-decoration: none;
+    transition: all 300ms ease;
+    &_italic{      
+    font-style: italic;
+    }
+    &:hover {
+      color: #ed83a8;
+      transform: scale(1.1);
+    }
+  }
+  &__container {
+    display: flex;
+    justify-content: center;
+    margin: 100px 0;
+  }
+  &__sub {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    color: #32313a;
+    border: none;
+    background: none;
+    margin-bottom: 10px;
+    &-text {
+      font-size: 13px;
+      line-height: 16px;
+      margin-bottom: 10px;
+    }
+  }
+  &__arrrow-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+  &__width-fix {
+    width: 1110px;
+  }
+}
+.arrow {
+  &__glide {
+    width: 25px;
+    height: 25px;
+    color: #b5b5bc;
+    cursor: pointer;
+    transition: all 300ms ease;
+    &:hover {
+      color: #32313a;
+    }
+    &_left {
+      margin-right: 20px;
+    }
+  }
+}

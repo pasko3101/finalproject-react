@@ -1,0 +1,14 @@
+.picture {
+  &__container {
+    display: flex;
+    justify-content: center;
+  }
+  &__wrap {
+    width: 1110px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__img {
+    border-radius: 2px;
+  }
+}

@@ -1,0 +1,42 @@
+.favorites {
+  &__container {
+    width: 1110px;
+    margin: 0 auto;
+    &_bg {
+      min-height: 613px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: url(../img/nothing.png) 50% no-repeat;
+    }
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 36px;
+    color: #32313a;
+  }
+  &__count {
+    font-weight: 400;
+    font-size: 12px;
+    color: #6e6d74;
+    margin-bottom: 20px;
+  }
+  &__card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  &__nothing {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 36px;
+    color: #fff;
+    &_smile{
+      font-size: 76px;
+      line-height: 126px;
+
+    }
+  }
+}
