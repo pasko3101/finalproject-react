@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { FiChevronDown } from "react-icons/fi";
+import PriceRange from "./img/PriceRange.png"
+
 
 const NewinPrice = () => {
   const [hover, setHover] = useState(true);
@@ -25,7 +27,7 @@ const NewinPrice = () => {
             : "newIn__block__items newIn_colorblock"
         }
       >
-        1 2 3 4 5 6
+        <img src={PriceRange} alt="PriceRange" />
       </div>
     </div>
   );
