@@ -1,12 +1,11 @@
 import React, { useState, useEffect } from "react";
-import "../components/shopcart/scss/ShopCart.scss";
-import Slider from "../components/mainpage/Slider";
+import Slider from "../components/Slider";
 import SlideApiSecond from "../api/SlideApiSecond";
-import Brands from "../components/mainpage/Brands";
-import ShopCartItem from "../components/shopcart/ShopCartItem";
-import ShopCartOrder from "../components/shopcart/ShopCartOrder";
+import Brands from "../components/Brands";
+import ShopCartItem from "./shopcart/ShopCartItem";
+import ShopCartOrder from "./shopcart/ShopCartOrder";
 import { useSelector } from "react-redux";
-import ShopCartClean from "../components/shopcart/ShopCartClear";
+import ShopCartClean from "./shopcart/ShopCartClear";
 
 const ShopBag = () => {
   const [subtotal, setSubtotal] = useState(0);

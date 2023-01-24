@@ -1,15 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import "../components/product/scss/Product.scss";
-import "../components/product/StarRating/StarRating.scss";
-import Slider from "../components/mainpage/Slider";
+import Slider from "../components/Slider";
 import SlideApiSecond from "../api/SlideApiSecond";
-import StarRating from "../components/product/StarRating/StarRating";
-import { Loader } from "../loader/Loader";
+import StarRating from "../components/StarRating";
+import { Loader } from "../components/Loader";
 import axios from "axios";
-import SizeBar from "../components/product/SizeBar";
-import useFavorite from "../components/hooks/useFavorite";
-import HeartIcon from "../components/mainpage/heart";
+import SizeBar from "../components/SizeBar";
+import useFavorite from "../hooks/useFavorite";
+import { HeartIcon } from "../img/icons";
 import { cartAdd } from "../store/actions/cartAction";
 import { useDispatch } from "react-redux";
 

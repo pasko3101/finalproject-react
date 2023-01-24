@@ -1,7 +1,7 @@
 * {
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
   font-family: "OpenSans";
 }
 
@@ -21,10 +21,25 @@
 }
 
 @mixin width-contain {
-	width: 1110px;
+  width: 1110px;
 }
 
 @mixin centr-contain {
-	display: flex;
-	justify-content: center;
+  display: flex;
+  justify-content: center;
 }
+@import "./scss/favorites";
+@import "./scss/footer.scss";
+@import "./scss/heroScreen.scss";
+@import "./scss/brands.scss";
+@import "./scss/exclusively.scss";
+@import "./scss/header.scss";
+@import "./scss/headerSale.scss";
+@import "./scss/mainPicture.scss";
+@import "./scss/pictureBlock.scss";
+@import "./scss/sliderMain.scss";
+@import "./scss/newIn.scss";
+@import "./scss/product.scss";
+@import "./scss/shopCart.scss";
+@import "./scss/sizeBar.scss";
+@import "./scss/starRating.scss";

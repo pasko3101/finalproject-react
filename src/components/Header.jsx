@@ -1,16 +1,14 @@
 import React from "react";
-import { Outlet } from "react-router-dom";
-import LogoHeader from "./mainpage/LogoHeader";
-import HeaderNav from "./mainpage/HeaderNav";
+import LogoHeader from "../pages/mainpage/LogoHeader"
+import HeaderNav from "../pages/mainpage/HeaderNav";
 
 const Header = () => {
-	return (
-		<>
-			<LogoHeader />
-			<HeaderNav />
-			<Outlet />
-		</>
-	);
+  return (
+    <>
+      <LogoHeader />
+      <HeaderNav />
+    </>
+  );
 };
 
 export default Header;

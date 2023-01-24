@@ -1,7 +1,7 @@
 import React from "react";
 import { useSelector } from "react-redux";
-import "../components/favorites/scss/favorites.scss";
-import Cards from "../components/mainpage/Cards";
+import "../scss/favorites.scss";
+import Cards from "../components/Cards";
 
 const Favorites = () => {
   const favorites = useSelector((store) => store.favorites);

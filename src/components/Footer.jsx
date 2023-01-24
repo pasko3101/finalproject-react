@@ -1,12 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./mainpage/scss/Footer.scss";
-import Instagram from "./mainpage/img/instagram.svg";
-import Facebook from "./mainpage/img/facebook.svg";
-import Twitter from "./mainpage/img/twitter.svg";
-import Pinterest from "./mainpage/img/pinterest.svg";
-import Youtube from "./mainpage/img/youtube.svg";
-import DressNote from "./mainpage/img/DRESSNOTE.svg";
+import "../scss/footer.scss";
+import { DressNote } from "../img/logos";
+import { Instagram, Facebook, Twitter, Pinterest, Youtube } from "../img/icons";
 const Footer = () => {
   return (
     <>
@@ -81,41 +77,23 @@ const Footer = () => {
               <button className="footer__email_btn">Subscribe</button>
             </form>
             <div className="footer__socials">
-              <img
-                src={Instagram}
-                alt="Instagram"
-                className="footer__socials_item"
-              />
-              <img
-                src={Facebook}
-                alt="Facebook"
-                className="footer__socials_item"
-              />
-              <img
-                src={Twitter}
-                alt="Twitter"
-                className="footer__socials_item"
-              />
-              <img
-                src={Pinterest}
-                alt="Pinterest"
-                className="footer__socials_item"
-              />
-              <img
-                src={Youtube}
-                alt="Youtube"
-                className="footer__socials_item"
-              />
+              <Instagram className="footer__socials_item" />
+              <Facebook className="footer__socials_item" />
+              <Twitter className="footer__socials_item" />
+              <Pinterest className="footer__socials_item" />
+              <Youtube className="footer__socials_item" />
             </div>
           </div>
         </div>
       </div>
-        <div className="footer__copyright">
-          <Link to="/" alt="Dressnote">
-            <img className="footer__copyright_logo" src={DressNote} alt="Dressnote" />
-          </Link>
-          <p className="footer__copyright_text">&copy; 2022 All rights reserved</p>
-        </div>
+      <div className="footer__copyright">
+        <Link to="/" alt="Dressnote">
+          <DressNote className="footer__copyright_logo" />
+        </Link>
+        <p className="footer__copyright_text">
+          &copy; 2022 All rights reserved
+        </p>
+      </div>
     </>
   );
 };
