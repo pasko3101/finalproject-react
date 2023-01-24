@@ -9,7 +9,7 @@ import { useDispatch, useSelector } from "react-redux";
 import Cards from "../components/Cards";
 import picNewIn from "../img/newIn.png";
 import { Loader } from "../components/Loader";
-import { sizes, brands } from "../components/SizesBrands";
+import { sizes, brands } from "../components/CategoriesSizesBrands";
 import NewinCategories from "./newIn/NewinCategories";
 import NewinBlock from "./newIn/NewinBlock";
 import NewinColor from "./newIn/NewinColor";
@@ -33,7 +33,7 @@ const NewIn = () => {
   return (
     <div className="newIn__wrap">
       <div className="newIn__contain">
-        <div className="newIn__bars">
+        <section className="newIn__bars">
           <div className="newIn_item">
             <NewinCategories />
             <NewinBlock item={sizes} title="Size" />
@@ -42,8 +42,8 @@ const NewIn = () => {
             <NewinPrice />
             <button className="newIn__more_btn">More filters</button>
           </div>
-        </div>
-        <div className="newIn__inner">
+        </section>
+        <section className="newIn__inner">
           <div className="picNewIn__wrap">
             <h2 className="picNewIn__title">New in</h2>
             <p className="picNewIn__subtitle">
@@ -88,7 +88,7 @@ const NewIn = () => {
             </p>
             <button className="newIn__more_btn"> Load more</button>
           </div>
-        </div>
+        </section>
       </div>
     </div>
   );

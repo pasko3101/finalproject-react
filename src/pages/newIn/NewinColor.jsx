@@ -1,10 +1,11 @@
 import { useState } from "react";
 import { FiChevronDown } from "react-icons/fi";
+import { color } from "../../components/CategoriesSizesBrands";
 
 const NewinColor = () => {
   const [hover, setHover] = useState(true);
   return (
-    <div className="newIn__block">
+    <section className="newIn__block">
       <div className="newIn__block__head">
         <h3 className="newIn__block__title">Color</h3>
         <button
@@ -25,20 +26,15 @@ const NewinColor = () => {
             : "newIn__block__items newIn_colorblock"
         }
       >
-        <div className="newIn__color newIn__color_pink" />
-        <div className="newIn__color newIn__color_yellow" />
-        <div className="newIn__color newIn__color_green" />
-        <div className="newIn__color newIn__color_blak" />
-        <div className="newIn__color newIn__color_gray" />
-        <div className="newIn__color newIn__color_white" />
-        <div className="newIn__color newIn__color_burgundy" />
-        <div className="newIn__color newIn__color_red" />
-        <div className="newIn__color newIn__color_orange" />
-        <div className="newIn__color newIn__color_blue" />
-        <div className="newIn__color newIn__color_liBlue" />
-        <div className="newIn__color newIn__color_purple" />
+        {color.map((item, index) => (
+          <div
+            to="/newIn"
+            className={`newIn__color newIn__color_${item}`}
+            key={index}
+          ></div>
+        ))}
       </div>
-    </div>
+    </section>
   );
 };
 

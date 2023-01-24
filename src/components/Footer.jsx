@@ -1,67 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "../scss/footer.scss";
-import { DressNote } from "../img/logos";
+import { DressNoteFooter } from "../img/logos";
+import FooterBlock from "./FooterBlock";
+import { customerSupport, myAccount } from "./CategoriesSizesBrands";
 import { Instagram, Facebook, Twitter, Pinterest, Youtube } from "../img/icons";
 const Footer = () => {
   return (
     <>
-      <div className="footer__container">
+      <footer className="footer__container">
         <div className="footer__wrap">
-          <ul className="footer__navList">
-            <li className="footer__navItem">
-              <Link to="/" className="footer__navLink footer__navLink_bolt">
-                Customer support
-              </Link>
-            </li>
-            <li className="footer__navItem">
-              <Link to="/" className="footer__navLink">
-                Size guides
-              </Link>
-            </li>
-            <li className="footer__navItem">
-              <Link to="/" className="footer__navLink">
-                Shipping
-              </Link>
-            </li>
-            <li className="footer__navItem">
-              <Link to="/" className="footer__navLink">
-                Returns
-              </Link>
-            </li>
-            <li className="footer__navItem">
-              <Link to="/" className="footer__navLink">
-                Track my order
-              </Link>
-            </li>
-          </ul>
-          <ul className="footer__navList">
-            <li className="footer__navItem">
-              <Link to="/" className="footer__navLink footer__navLink_bolt">
-                My account
-              </Link>
-            </li>
-            <li className="footer__navItem">
-              <Link to="/" className="footer__navLink">
-                Order history
-              </Link>
-            </li>
-            <li className="footer__navItem">
-              <Link to="/" className="footer__navLink">
-                Payment methods
-              </Link>
-            </li>
-            <li className="footer__navItem">
-              <Link to="/" className="footer__navLink">
-                Account settings
-              </Link>
-            </li>
-            <li className="footer__navItem">
-              <Link to="/favorites" className="footer__navLink">
-                Favorites
-              </Link>
-            </li>
-          </ul>
+          <FooterBlock item={customerSupport} title="Customer support" />
+          <FooterBlock item={myAccount} title="My account" />
           <div className="footer__form">
             <p className="footer__text">
               Sign up today for email exclusives including early access to Sale,
@@ -85,10 +34,10 @@ const Footer = () => {
             </div>
           </div>
         </div>
-      </div>
+      </footer>
       <div className="footer__copyright">
         <Link to="/" alt="Dressnote">
-          <DressNote className="footer__copyright_logo" />
+          <DressNoteFooter className="footer__copyright_logo" />
         </Link>
         <p className="footer__copyright_text">
           &copy; 2022 All rights reserved

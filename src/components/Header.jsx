@@ -1,6 +1,6 @@
 import React from "react";
-import LogoHeader from "../pages/mainpage/LogoHeader"
-import HeaderNav from "../pages/mainpage/HeaderNav";
+import LogoHeader from "./LogoHeader"
+import HeaderNav from "./HeaderNav";
 
 const Header = () => {
   return (

@@ -4,7 +4,7 @@ import { FiChevronDown } from "react-icons/fi";
 const NewinBlock = ({ item = [], title }) => {
   const [hover, setHover] = useState(true);
   return (
-    <div className="newIn__block">
+    <section className="newIn__block">
       <div className="newIn__block__head">
         <h3 className="newIn__block__title">{title}</h3>
         <button
@@ -40,7 +40,7 @@ const NewinBlock = ({ item = [], title }) => {
           );
         })}
       </div>
-    </div>
+    </section>
   );
 };
 

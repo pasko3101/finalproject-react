@@ -1,3 +1,26 @@
+export const customerSupport = [
+  "Size guides",
+  "Shipping",
+  "Returns",
+  "Track my order",
+];
+export const myAccount = [
+  "Order history",
+  "Payment methods",
+  "Account settings",
+  "Favorites",
+];
+export const categories = [
+  "Jackets & Outwear",
+  "Tops",
+  "T-shirts",
+  "Shirts & Blouses",
+  "Dresses",
+  "Jeans & Trousers",
+  "Skirts & Shorts",
+  "Jeans & Trousers",
+  "Skirts & Shorts",
+];
 export const sizes = [
   "32 (XXS)",
   "34 (XS)",
@@ -7,6 +30,20 @@ export const sizes = [
   "42 (XL)",
   "44 (XXL)",
   "46 (3XL)",
+];
+export const color = [
+  "pink",
+  "yellow",
+  "green",
+  "blak",
+  "gray",
+  "white",
+  "burgundy",
+  "red",
+  "orange",
+  "blue",
+  "liBlue",
+  "purple",
 ];
 export const brands = [
   "Abercrombie & Fitch",
